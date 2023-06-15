@@ -21,6 +21,7 @@ module.exports = {
                         loader: "css-loader",
                         options: {
                             modules: {
+                                // 允许配置生成的本地标识符(ident)
                                 localIdentName: "[hash:base64]",
                             },
                         },
@@ -47,7 +48,12 @@ module.exports = {
         ],
     },
     resolve,
-    plugins,
+    plugins: [
+        ...plugins,
+        new MiniCssExtractPlugin({
+            filename: "css/[name]_[contenthash].css",
+        }),
+    ],
     mode: "production",
     devtool: "hidden-source-map",
 };

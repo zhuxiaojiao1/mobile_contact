@@ -15,7 +15,7 @@ const output = {
 
 const loaders = [
     {
-        test: /\.(ico|woff2?|pdf|eot|ttf|svg|opentype|otf|)$/,
+        test: /\.(ico|woff2?|pdf|eot|ttf|svg|opentype|otf)$/,
         type: "asset/resource",
         generator: {
             filename: "/[name][ext][query]",
@@ -30,6 +30,7 @@ const loaders = [
     },
     {
         test: /\.(j|t)sx?$/,
+        exclude: /node_modules/,
         use: [
             {
                 loader: "babel-loader",
