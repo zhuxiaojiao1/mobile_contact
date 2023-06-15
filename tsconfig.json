@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "rootDirs": ["src", "node_modules/@datareachable"],
+        "target": "es5",
+        "outDir": "build",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": false,
+        "skipLibCheck": false,
+        "esModuleInterop": true,
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": false,
+        "forceConsistentCasingInFileNames": true,
+        "downlevelIteration": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "newLine": "lf",
+        "skipDefaultLibCheck": true,
+        "noImplicitAny": false,
+        "noEmitOnError": false,
+        "allowUnreachableCode": false,
+        "typeRoots": ["./types", "node_modules/@types"],
+        "baseUrl": "src",
+        "noPropertyAccessFromIndexSignature": false,
+        "paths": {
+            "~/*": ["*"]
+        }
+    },
+    "plugins": [
+        {
+            "name": "typescript-tslint-plugin"
+        }
+    ],
+    "include": ["src/**/*", "node_modules/@datareachable/**/*"],
+    "exclude": ["node_modules", "types", "**.mjs"]
+}

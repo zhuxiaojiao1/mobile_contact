@@ -1,0 +1,10 @@
+# lock
+package-lock.json
+*.lock
+
+# Dependency directories
+node_modules
+
+# build files
+build
+dist

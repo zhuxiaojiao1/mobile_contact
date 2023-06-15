@@ -1,0 +1,45 @@
+/**
+* @file 
+* @date 2023-06-15
+* @author zhuxiaojiao
+* @lastModify zhuxiaojiao 2023-06-15
+*/
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+/** Import all the reference constant after this line */
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+/** The demo mixin is ..........*/
+
+@mixin demo {
+}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.mobileContacts_container {
+    height: 70rem;
+    width: 40rem;
+    border: 0.1rem solid #bdbdbd;
+    margin: 10rem auto;
+    border-radius: 1rem;
+    padding: 2.4rem 0;
+    overflow: auto;
+}
+
+.mobileContacts_box {
+    padding: 0 1.2rem;
+    > span {
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+        color: #999;
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

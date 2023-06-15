@@ -1,0 +1,45 @@
+/**
+* @file 
+* @date 2023-06-15
+* @author zhuxiaojiao
+* @lastModify zhuxiaojiao 2023-06-15
+*/
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+/** Import all the reference constant after this line */
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+/** The demo mixin is ..........*/
+
+@mixin demo {
+}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.contact_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    img {
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    p {
+        font-size: 1.8rem;
+        margin-left: 1.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */
